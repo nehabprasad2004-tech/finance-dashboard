@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FinFlow - Finance Dashboard
 
 A clean and interactive finance dashboard built with React for tracking and understanding financial activity.
@@ -25,7 +26,7 @@ A clean and interactive finance dashboard built with React for tracking and unde
 
 1. Clone the repository
    ```
-   git clone https://github.com/YOUR_USERNAME/finance-dashboard.git
+   git clone https://github.com/nehabprasad2004-tech/finance-dashboard.git
    ```
 
 2. Go into the project folder
@@ -95,3 +96,6 @@ The following state is tracked:
 - Role switching is for demonstration purposes only, no authentication is implemented
 - All amounts are in USD
 -
+=======
+# finance-dashboard
+>>>>>>> bd93d4a9b71c2f77010fba2a050ae5526fdd9849
