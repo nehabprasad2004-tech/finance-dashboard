@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# FinFlow - Finance Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean and interactive finance dashboard built with React for tracking and understanding financial activity.
 
-## Available Scripts
+## Live Features
 
-In the project directory, you can run:
+- **Dashboard Overview** - Summary cards showing Total Balance, Income, and Expenses with charts
+- **Transactions Section** - Full list of transactions with search, filter, and sort
+- **Insights Section** - Spending patterns, top categories, and monthly comparisons
+- **Role Based UI** - Switch between Admin and Viewer roles using the dropdown in the sidebar
+- **Dark / Light Mode** - Toggle between dark and light themes
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** - Frontend framework
+- **Recharts** - For all charts and visualizations
+- **Plain CSS-in-JS** - Styling using inline style objects, no external CSS library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
+- Node.js installed on your machine
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository
+   ```
+   git clone https://github.com/YOUR_USERNAME/finance-dashboard.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Go into the project folder
+   ```
+   cd finance-dashboard
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies
+   ```
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Install Recharts
+   ```
+   npm install recharts
+   ```
 
-### `npm run eject`
+5. Start the app
+   ```
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The app will open at `http://localhost:3000`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+src/
+  App.js        # Main file containing all components and logic
+  index.js      # Entry point
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Data
 
-## Learn More
+All data is mock data defined directly in the code. No backend or API is required. The app uses 30 sample transactions across 3 months (January to March 2024).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Role Based UI
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Feature              | Admin | Viewer |
+|----------------------|-------|--------|
+| View Dashboard       | ✅    | ✅     |
+| View Transactions    | ✅    | ✅     |
+| Add Transaction      | ✅    | ❌     |
+| Edit Transaction     | ✅    | ❌     |
+| Delete Transaction   | ✅    | ❌     |
+| View Insights        | ✅    | ✅     |
 
-### Code Splitting
+Switch roles using the dropdown in the bottom left sidebar.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## State Management
 
-### Analyzing the Bundle Size
+State is managed using React's built-in `useState` and `useMemo` hooks. No external state library like Redux is used as the app complexity does not require it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The following state is tracked:
+- Transactions data
+- Active tab
+- Search text
+- Category and type filters
+- Sort key and direction
+- Selected role
+- Dark / Light mode
+- Modal open/close
 
-### Making a Progressive Web App
+## Assumptions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Data is mock and resets on page refresh
+- Role switching is for demonstration purposes only, no authentication is implemented
+- All amounts are in USD
+-
