@@ -95,7 +95,7 @@ The following state is tracked:
 - Data is mock and resets on page refresh
 - Role switching is for demonstration purposes only, no authentication is implemented
 - All amounts are in USD
--
+
 =======
 # finance-dashboard
 >>>>>>> bd93d4a9b71c2f77010fba2a050ae5526fdd9849
