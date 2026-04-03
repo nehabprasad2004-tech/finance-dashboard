@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FinFlow - Finance Dashboard
 
 FinFlow is a financial dashboard built to help users track and manage their transactions in a simple and visual way.
@@ -76,3 +77,7 @@ You can switch between roles using the dropdown in the bottom left of the sideba
 State is handled using React's built in useState and useMemo hooks. No external library like Redux was needed since the app state is straightforward and manageable with React alone.
 
 Things tracked in state include the transactions list, active tab, search input, filters, sort order, selected role, and the dark or light mode preference.
+=======
+# finance-dashboard
+Financial dashboard built to help users track and manage their transactions in a simple and visual way.
+>>>>>>> 9d393ac580eb510a72e35a59bd5c8c0ca0d24547
